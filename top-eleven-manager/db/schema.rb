@@ -17,6 +17,7 @@ ActiveRecord::Schema.define(version: 20160302010747) do
   enable_extension "plpgsql"
 
   create_table "players", force: :cascade do |t|
+    t.string   "name"
     t.integer  "tackling"
     t.integer  "marking"
     t.integer  "positioning"
