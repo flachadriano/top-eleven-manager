@@ -5,21 +5,7 @@
 <table>
   <thead>
     <tr>
-      <th>Tackling</th>
-      <th>Marking</th>
-      <th>Positioning</th>
-      <th>Heading</th>
-      <th>Bravery</th>
-      <th>Passing</th>
-      <th>Dribbling</th>
-      <th>Crossing</th>
-      <th>Shooting</th>
-      <th>Finishing</th>
-      <th>Fitness</th>
-      <th>Strength</th>
-      <th>Aggression</th>
-      <th>Speed</th>
-      <th>Creativity</th>
+      <th>Name</th>
       <th colspan="3"></th>
     </tr>
   </thead>
@@ -27,21 +13,7 @@
   <tbody>
     <% @players.each do |player| %>
       <tr>
-        <td><%= player.tackling %></td>
-        <td><%= player.marking %></td>
-        <td><%= player.positioning %></td>
-        <td><%= player.heading %></td>
-        <td><%= player.bravery %></td>
-        <td><%= player.passing %></td>
-        <td><%= player.dribbling %></td>
-        <td><%= player.crossing %></td>
-        <td><%= player.shooting %></td>
-        <td><%= player.finishing %></td>
-        <td><%= player.fitness %></td>
-        <td><%= player.strength %></td>
-        <td><%= player.aggression %></td>
-        <td><%= player.speed %></td>
-        <td><%= player.creativity %></td>
+        <td><%= player.name %></td>
         <td><%= link_to 'Show', player %></td>
         <td><%= link_to 'Edit', edit_player_path(player) %></td>
         <td><%= link_to 'Destroy', player, method: :delete, data: { confirm: 'Are you sure?' } %></td>
