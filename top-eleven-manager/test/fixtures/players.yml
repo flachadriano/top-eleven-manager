@@ -1,0 +1,35 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  tackling: 1
+  marking: 1
+  positioning: 1
+  heading: 1
+  bravery: 1
+  passing: 1
+  dribbling: 1
+  crossing: 1
+  shooting: 1
+  finishing: 1
+  fitness: 1
+  strength: 1
+  aggression: 1
+  speed: 1
+  creativity: 1
+
+two:
+  tackling: 1
+  marking: 1
+  positioning: 1
+  heading: 1
+  bravery: 1
+  passing: 1
+  dribbling: 1
+  crossing: 1
+  shooting: 1
+  finishing: 1
+  fitness: 1
+  strength: 1
+  aggression: 1
+  speed: 1
+  creativity: 1

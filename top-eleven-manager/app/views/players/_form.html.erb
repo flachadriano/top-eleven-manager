@@ -1,0 +1,77 @@
+<%= form_for(@player) do |f| %>
+  <% if @player.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@player.errors.count, "error") %> prohibited this player from being saved:</h2>
+
+      <ul>
+      <% @player.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :tackling %><br>
+    <%= f.number_field :tackling %>
+  </div>
+  <div class="field">
+    <%= f.label :marking %><br>
+    <%= f.number_field :marking %>
+  </div>
+  <div class="field">
+    <%= f.label :positioning %><br>
+    <%= f.number_field :positioning %>
+  </div>
+  <div class="field">
+    <%= f.label :heading %><br>
+    <%= f.number_field :heading %>
+  </div>
+  <div class="field">
+    <%= f.label :bravery %><br>
+    <%= f.number_field :bravery %>
+  </div>
+  <div class="field">
+    <%= f.label :passing %><br>
+    <%= f.number_field :passing %>
+  </div>
+  <div class="field">
+    <%= f.label :dribbling %><br>
+    <%= f.number_field :dribbling %>
+  </div>
+  <div class="field">
+    <%= f.label :crossing %><br>
+    <%= f.number_field :crossing %>
+  </div>
+  <div class="field">
+    <%= f.label :shooting %><br>
+    <%= f.number_field :shooting %>
+  </div>
+  <div class="field">
+    <%= f.label :finishing %><br>
+    <%= f.number_field :finishing %>
+  </div>
+  <div class="field">
+    <%= f.label :fitness %><br>
+    <%= f.number_field :fitness %>
+  </div>
+  <div class="field">
+    <%= f.label :strength %><br>
+    <%= f.number_field :strength %>
+  </div>
+  <div class="field">
+    <%= f.label :aggression %><br>
+    <%= f.number_field :aggression %>
+  </div>
+  <div class="field">
+    <%= f.label :speed %><br>
+    <%= f.number_field :speed %>
+  </div>
+  <div class="field">
+    <%= f.label :creativity %><br>
+    <%= f.number_field :creativity %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

@@ -1,0 +1,1 @@
+json.extract! @player, :id, :tackling, :marking, :positioning, :heading, :bravery, :passing, :dribbling, :crossing, :shooting, :finishing, :fitness, :strength, :aggression, :speed, :creativity, :created_at, :updated_at
